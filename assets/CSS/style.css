@@ -1,0 +1,19 @@
+/* color palette included from coolors.co guidance on making the website taken from youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY
+video guidance was adapted to suit my needs for the site. Also trying using variables and got guidance from https://www.w3schools.com/css/css3_variables.asp*/
+
+body {
+    
+    font-family: 'Comic Neue', sans-serif;
+	margin: 0;
+    padding:0;
+	width: 100vw;
+    --color1: #ffbe0b;
+    --color2: #fb5607;
+    --color3: #ff006e;
+    --color4: #8338ec;
+    --color5: #3a86ff;
+    background-color: var(--color1)
+
+}
+
+
