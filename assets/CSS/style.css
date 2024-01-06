@@ -1,6 +1,17 @@
 /* color palette included from coolors.co guidance on making the website taken from youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY
 video guidance was adapted to suit my needs for the site. Also trying using variables and got guidance from https://www.w3schools.com/css/css3_variables.asp*/
 
+:root {
+    --color1: #ffbe0b;
+    --color2: #FFD86E;
+    --color3: #ff006e;
+    --color4: #8338ec;
+    --color5: #3a86ff;
+    background-color: var(--color1)
+
+}
+
+
 body {
     
     font-family: 'Comic Neue', sans-serif;
@@ -10,7 +21,7 @@ body {
     font-size: 16px;
 	width: 100vw;
     --color1: #ffbe0b;
-    --color2: #fb5607;
+    --color2: #FFD86E;
     --color3: #ff006e;
     --color4: #8338ec;
     --color5: #3a86ff;
@@ -82,6 +93,39 @@ h2 {font-size: 32px;}
              margin-left: 16px;
 }
 
+/* Modal used for contact form was guided by youtube video: https://www.youtube.com/watch?v=KjQ8uvAt9kQ */
 
+.modal-con { position: fixed;
+             top: 0;
+             left:0;
+             width: 100%;
+             height: 100vh;
+             background-color: var(--color2);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             visibility: hidden;
+             opacity: 0;
+             transition: visibility 0.5s ease, opacity 0.5s ease;
+
+
+
+}
+
+.con-active {
+
+    visibility:visible;
+    opacity: 1;
+}
+
+.modal {
+
+    height: 33%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
