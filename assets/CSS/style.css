@@ -120,12 +120,14 @@ h2 {font-size: 32px;}
 
 .modal {
 
-    height: 33%;
-    width: 33%;
+    height: 80%;
+    width: 50%;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     justify-content: space-around;
+    background-color: white;
 }
 
 
