@@ -10,3 +10,11 @@ background: var(--color4);
 min-width: 20em;
 
 }
+
+.answer-container:hover {
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.313rem 0.375rem var(--color5);
+    transform: scale(1.5);
+}
+
+
