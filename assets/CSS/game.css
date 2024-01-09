@@ -1,0 +1,12 @@
+body {color: var(--color2);}
+
+
+.answer-container {
+display: flex;
+margin-bottom: 16px;
+width: 66%;
+border-radius: 4px;
+background: var(--color4);
+min-width: 20em;
+
+}
