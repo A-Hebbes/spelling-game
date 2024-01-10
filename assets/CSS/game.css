@@ -68,7 +68,10 @@ min-width: 20em;
     background: var(--color4);
     align-items: center;
     margin:auto;
+    flex-direction: column;
 
+}
 
-
+.hud-main-text{
+    color: var(--color2);
 }
