@@ -1,6 +1,15 @@
 /* color palette included from coolors.co guidance on making the website taken from youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY
 video guidance was adapted to suit my needs for the site. Also trying using variables and got guidance from https://www.w3schools.com/css/css3_variables.asp*/
 
+/* Var color uses 
+
+ Color 1 - Background 
+ Color 2 - Text 
+ Color 3 - Incorrect Answer 
+ Color 4 - Boxes 
+ Color 5 - Correct Answer
+
+*/
 :root {
     --color1: #ffbe0b;
     --color2: #FFD86E;

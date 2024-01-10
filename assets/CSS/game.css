@@ -46,4 +46,14 @@ min-width: 20em;
     width: 66%;
 }
 
+.correct {
+    background: var(--color5);
+
+}
+
+.incorrect {
+    background: var(--color3);
+    
+}
+
 
