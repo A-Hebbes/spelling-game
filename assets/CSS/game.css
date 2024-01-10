@@ -8,13 +8,13 @@ body {color: var(--color2);}
 .question-container {
 
 display: flex;
+margin: 16px;
 margin-bottom: 16px;
 width: 66%;
 border-radius: 4px;
 background: var(--color4);
 min-width: 20em;
 text-align: center;
-
 
 }
 
@@ -56,4 +56,19 @@ min-width: 20em;
     
 }
 
+/* hud styles */
 
+.hud-item {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    margin-bottom: 64px;
+    
+    border-radius: 4px;
+    background: var(--color4);
+    align-items: center;
+    margin:auto;
+
+
+
+}
