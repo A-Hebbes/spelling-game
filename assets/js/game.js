@@ -1,52 +1,47 @@
+/* Support for game.JS provided by Ollie Grubb. Stack Overflow and Chat GPT used to help find bugs */
 
 var score = 0
+var question = 0
 document.getElementById("score").innerHTML=score
 
+function setQuestion(questionNumber){
+    document.getElementById("question").innerHTML = questionText[questionNumber]
+    document.getElementById("ansBox1").innerHTML = ansBoxOne[questionNumber]
+    document.getElementById("ansBox2").innerHTML = ansBoxTwo[questionNumber]
+    document.getElementById("ansBox3").innerHTML= ansBoxThree[questionNumber]
+    
+}
 
+var questionText = ["Question1", "Question 2", "Question 3"]
+var ansBoxOne = ["Their", "Their", "Their"]
+var ansBoxTwo = ["There", "There", "There"]
+var ansBoxThree = ["They're", "They're", "They're"]
+var correctAnswers = [1, 2, 3]
 
-let q1 = "Q1"
-let q1_ans_a = "Q1A"
-let q1_ans_b = "Q1B"
-let q1_ans_c = "Q1C"
+setQuestion(question)
 
-let trueAnswer = 1
-
-
-document.getElementById("question").innerHTML=q1
-document.getElementById("ansBox1").innerHTML=q1_ans_a
-document.getElementById("ansBox2").innerHTML=q1_ans_b
-document.getElementById("ansBox3").innerHTML=q1_ans_c
 
 function answerGuess(buttonNumber){
-    console.log(buttonNumber);
+    
 
-    if (buttonNumber == trueAnswer) {
-        console.log("correct")
+    if (buttonNumber == correctAnswers[question]) {
+        console.log("True")
+        document.getElementById ("score").innerText = ++score;
     }
+
+    else {
+        console.log("False")
+    }
+
+    ++question
+    console.log(question)
+    setQuestion(question)
+    
+    /* add if statment for what to do at final question in array */
+
 }
 
 
 
-/*
-let q2 = "Q2"
-let q2_ans_a = "Q2A"
-let q2_ans_b = "Q2B"
-let q2_ans_c = "Q2C"
 
 
-document.getElementById("question").innerHTML=q2
-document.getElementById("ansBox1").innerHTML=q2_ans_a
-document.getElementById("ansBox2").innerHTML=q2_ans_b
-document.getElementById("ansBox3").innerHTML=q2_ans_c
-
-let q3 = "Q3"
-let q3_ans_a = "Q3A"
-let q3_ans_b = "Q3B"
-let q3_ans_c = "Q3C"
-
-
-document.getElementById("question").innerHTML=q3
-document.getElementById("ansBox1").innerHTML=q3_ans_a
-document.getElementById("ansBox2").innerHTML=q3_ans_b
-document.getElementById("ansBox3").innerHTML=q3_ans_c
-*/
