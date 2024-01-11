@@ -1,7 +1,15 @@
+
+var score = 0
+document.getElementById("score").innerHTML=score
+
+
+
 let q1 = "Q1"
 let q1_ans_a = "Q1A"
 let q1_ans_b = "Q1B"
 let q1_ans_c = "Q1C"
+
+let trueAnswer = 1
 
 
 document.getElementById("question").innerHTML=q1
@@ -9,6 +17,17 @@ document.getElementById("ansBox1").innerHTML=q1_ans_a
 document.getElementById("ansBox2").innerHTML=q1_ans_b
 document.getElementById("ansBox3").innerHTML=q1_ans_c
 
+function answerGuess(buttonNumber){
+    console.log(buttonNumber);
+
+    if (buttonNumber == trueAnswer) {
+        console.log("correct")
+    }
+}
+
+
+
+/*
 let q2 = "Q2"
 let q2_ans_a = "Q2A"
 let q2_ans_b = "Q2B"
@@ -30,4 +49,4 @@ document.getElementById("question").innerHTML=q3
 document.getElementById("ansBox1").innerHTML=q3_ans_a
 document.getElementById("ansBox2").innerHTML=q3_ans_b
 document.getElementById("ansBox3").innerHTML=q3_ans_c
-
+*/
