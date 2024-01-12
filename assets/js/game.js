@@ -17,11 +17,14 @@ var ansBoxOne = ["Their", "Their", "Their"]
 var ansBoxTwo = ["There", "There", "There"]
 var ansBoxThree = ["They're", "They're", "They're"]
 var correctAnswers = [1, 2, 3]
+var questionEnd = questionText.length 
 
 setQuestion(question)
 
 
 function answerGuess(buttonNumber){
+
+
     
 
     if (buttonNumber == correctAnswers[question]) {
@@ -36,10 +39,25 @@ function answerGuess(buttonNumber){
     ++question
     console.log(question)
     setQuestion(question)
+
+    if (question == questionEnd){
+     
+    var modalCon = document.querySelector ('.modal-con')
+    var modalClose = document.querySelector ('.modal-close')
+    
+        modalCon.classList.add ('con-active');
+    
+    };
+    
+    modalClose.addEventListener('click', function(){
+        modalCon.classList.remove('con-active');
+    });
+
+}
     
     /* add if statment for what to do at final question in array */
 
-}
+
 
 
 
