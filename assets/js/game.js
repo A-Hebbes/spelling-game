@@ -44,18 +44,23 @@ function answerGuess(buttonNumber){
      
     var modalCon = document.querySelector ('.modal-con')
     var modalClose = document.querySelector ('.modal-close')
+    var modalHome = document.querySelector ('.modal-home')
     
         modalCon.classList.add ('con-active');
     
     };
     
-    modalClose.addEventListener('click', function(){
+    /* location.reload advice gained from W3C page https://www.w3schools.com/jsref/met_loc_reload.asp#:~:text=Window%20location.reload()&text=The%20reload()%20method%20reloads,reload%20button%20in%20your%20browser.*/
+
+    modalHome.addEventListener('click', function(){
         modalCon.classList.remove('con-active');
+        location.reload()
+        window.location.href = '/index.html'
     });
 
 }
     
-    /* add if statment for what to do at final question in array */
+    
 
 
 
