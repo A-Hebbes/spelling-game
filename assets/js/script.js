@@ -11,3 +11,14 @@ contactBtn.addEventListener ('click', function(event) {
 modalClose.addEventListener('click', function(){
     modalCon.classList.remove('con-active');
 });
+
+ /* Modal for rules page need to look at why it isnt working. Changing the modalRules var stopped contact form coming up but now nothing appears and ther
+ is a error in dev tools. Check this next. */
+
+ var rulesBtn = document.querySelector ('.rules-btn');
+ var modalRules = document.querySelector ('.modal-rules')
+
+ rulesBtn.addEventListener ('click', function(event) {
+    event.preventDefault();
+    modal.classList.add ('con-active'); 
+ });
