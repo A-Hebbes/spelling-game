@@ -23,3 +23,7 @@ modalClose.addEventListener('click', function(){
     modalRules.classList.add ('con-active'); 
     
  });
+
+ modalClose.addEventListener('click', function(){
+    modalRules.classList.remove('con-active');
+});
