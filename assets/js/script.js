@@ -19,6 +19,7 @@ modalClose.addEventListener('click', function(){
  var modalRules = document.querySelector ('.modal-rules')
 
  rulesBtn.addEventListener ('click', function(event) {
+    console.log ("Hello")
     event.preventDefault();
-    modal.classList.add ('con-active'); 
+    modalRules.classList.add ('con-active'); 
  });
