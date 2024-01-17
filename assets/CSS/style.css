@@ -104,7 +104,7 @@ h2 {font-size: 32px;}
 
 /* Modal used for contact form was guided by youtube video: https://www.youtube.com/watch?v=KjQ8uvAt9kQ */
 
-.modal-con { position: fixed;
+.modal-style { position: fixed;
              top: 0;
              left:0;
              width: 100%;
@@ -119,21 +119,6 @@ h2 {font-size: 32px;}
 
 
 
-}
-
-.modal-rules{ 
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.5s ease, opacity 0.5s ease;
 }
 
 
@@ -161,6 +146,19 @@ h2 {font-size: 32px;}
     }
 
 .modal-close:hover {
+
+    color: var(--color4);
+    cursor: pointer;
+    
+}
+
+.modal-close-rules {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    }
+
+.modal-close-rules:hover {
 
     color: var(--color4);
     cursor: pointer;
