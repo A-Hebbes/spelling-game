@@ -2,7 +2,9 @@
 
 var score = 0
 var question = 0
+
 document.getElementById("score").innerHTML=score
+
 
 function setQuestion(questionNumber){
     document.getElementById("question").innerHTML = questionText[questionNumber]
@@ -40,20 +42,24 @@ function answerGuess(buttonNumber){
     console.log(question)
     setQuestion(question)
 
+    /* Modal for end of game */
+
+    var modalEnd = document.getElementById ('modal-end')
+var modalClose = document.querySelector ('.modal-close-end')
+var modalHome = document.querySelector ('.modal-home')
+
     if (question == questionEnd){
      
-    var modalCon = document.querySelector ('.modal-con')
-    var modalClose = document.querySelector ('.modal-close')
-    var modalHome = document.querySelector ('.modal-home')
     
-        modalCon.classList.add ('con-active');
+    
+        modalEnd.classList.add ('con-active');
     
     };
     
     /* location.reload advice gained from W3C page https://www.w3schools.com/jsref/met_loc_reload.asp#:~:text=Window%20location.reload()&text=The%20reload()%20method%20reloads,reload%20button%20in%20your%20browser.*/
 
     modalHome.addEventListener('click', function(){
-        modalCon.classList.remove('con-active');
+        modalEnd.classList.remove('con-active');
         location.reload()
         window.location.href = '/index.html'
     });
