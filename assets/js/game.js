@@ -14,11 +14,11 @@ function setQuestion(questionNumber){
     
 }
 
-var questionText = ["Question1", "Question 2", "Question 3"]
-var ansBoxOne = ["Their", "Their", "Their"]
-var ansBoxTwo = ["There", "There", "There"]
-var ansBoxThree = ["They're", "They're", "They're"]
-var correctAnswers = [1, 2, 3]
+var questionText = ["‘Look at the castle over …..', Frank said.", "….. are 100 centimetres in a metre.", "It was ….. turn to ride the rollercoaster.", "I like horses, ….. my favourite animal.", "It’s …… birthday tomorrow, don’t forget.", "How many biscuits are ….. in the jar?", "‘You can borrow those boots,’ Mary said. ‘It’s ok, ….. mine.’", "‘….. hair is long and black.’", "‘How many questions are …. left?’", "‘Anyone who finishes this spelling challenge has done …. best.’"]
+var ansBoxOne = ["Their", "Their", "Their", "Their", "Their", "Their", "Their", "Their", "Their", "Their"]
+var ansBoxTwo = ["There", "There", "There", "There", "There", "There", "There", "There", "There", "There"]
+var ansBoxThree = ["They're", "They're", "They're", "They're", "They're", "They're", "They're", "They're", "They're", "They're"]
+var correctAnswers = [2, 2, 1, 3, 1, 2, 3, 1, 2, 1]
 var questionEnd = questionText.length 
 
 setQuestion(question)
