@@ -14,7 +14,7 @@ margin: 16px;
 margin-bottom: 16px;
 width: 80%;
 border-radius: 4px;
-background: var(--color4);
+background: var(--color3);
 min-width: 20em;
 min-height: 10em;
 text-align: center;
@@ -25,11 +25,15 @@ text-align: center;
 
 .answer-container {
 display: flex;
+margin: 16px;
 margin-bottom: 16px;
 width: 66%;
+padding: 2em;
 border-radius: 4px;
 background: var(--color4);
 min-width: 20em;
+align-items: center;
+justify-content: center;
 
 }
 
