@@ -12,28 +12,8 @@
 <!--Guidance for this site was taken from the youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY and adapted to suit my needs -->
 <body>
 
-    <div class="container">
-
-    <div id="game" class="justify-center flex-column">
-
-        <div id="hud">
-
-            
-
-            <div class="progress">
-
-                <p id="progressInfo" class="hud-prefix">
-                    Question
-                </p>
-
-                <div id="progress-bar"></div>
-                <div id="progressBarFull"></div>
-
-
-            </div>
-            
-
-        </div>
+    <div class="game-wrapper">
+        
 
         <div class="hud-item">
             <p class="hud-prefix">
@@ -47,30 +27,30 @@
         </div>
 
         <div id="question" class="question-container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec mollis est. In eget hendrerit ipsum. Suspendisse tempor mattis eros sit amet imperdiet. Curabitur vel semper lorem, ut tincidunt sapien. </div>
-
+    
         
-
+        <div class="button-wrapper">
         
         <div onclick="answerGuess(1)" class="answer-container">
-        <p class="answer-prefix">1</p>
         <p id="ansBox1" class="answer-text" data-number="1">There</p>  
         </div>
 
         <div onclick="answerGuess(2)" class="answer-container">
-        <p class="answer-prefix">2</p>
         <p id="ansBox2" class="answer-text" data-number="2">Their</p> 
         </div>  
 
         <div onclick="answerGuess(3)" class="answer-container">
-        <p class="answer-prefix">3</p>
         <p id="ansBox3" class="answer-text" data-number="3">They're</p>   
+    </div>
+
     </div>
 
     
 
     </div>
 
-    </div>
+
+
 <!-- Modal For Game End -->
 
     <div id ="modal-end" class="modal-style">
