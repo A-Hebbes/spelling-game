@@ -16,7 +16,7 @@ width: 80%;
 border-radius: 4px;
 background: var(--color3);
 min-width: 20em;
-min-height: 10em;
+min-height: 5em;
 text-align: center;
 
 }
@@ -27,11 +27,13 @@ text-align: center;
 display: flex;
 margin: 16px;
 margin-bottom: 16px;
+margin-left: 2em;
 width: 66%;
 padding: 2em;
 border-radius: 4px;
 background: var(--color4);
 min-width: 20em;
+max-height: 5em;
 align-items: center;
 justify-content: center;
 
