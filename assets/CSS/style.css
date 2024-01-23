@@ -10,7 +10,7 @@ video guidance was adapted to suit my needs for the site. Also trying using vari
  Color 5 - Answer box shadow
 
 */
-:root {
+/*:root {
     --color1: #ffbe0b;
     --color2: #FFD86E;
     --color3: #ff006e;
@@ -18,10 +18,10 @@ video guidance was adapted to suit my needs for the site. Also trying using vari
     --color5: #3a86ff;
     background-color: var(--color1)
 
-}
+}*/
 
 
-body {
+:root {
     
     font-family: 'Comic Neue', sans-serif;
     box-sizing: border-box;

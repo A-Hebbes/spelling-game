@@ -1,7 +1,33 @@
 /* guidance on this code was taken from you tube video - https://www.youtube.com/watch?v=f4fB9Xg2JEY */
 
 
-body {color: var(--color2);}
+body {color: var(--color2);
+}
+
+.heading  {width:100vh;
+    margin: 0 auto;
+    text-align: center;}
+
+.fa-house {font-size: 38.4px;
+           
+           font-size: 38.4px;
+          color: var(--color4);
+          text-align: center;
+          border-color: var(--color4);
+         background: var(--color1);
+}
+
+.btn-home {background: var(--color1);}
+            
+
+
+}
+
+.game-page {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
 
 .game-wrapper {
     display: flex;
@@ -9,6 +35,7 @@ body {color: var(--color2);}
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    margin-top: -5em;
 }
 
 .button-wrapper {
@@ -29,7 +56,7 @@ align-items: center;
 padding: 2em;
 margin-top: 16px;
 margin-bottom: 16px;
-width: 80%;
+width: 66%;
 border-radius: 4px;
 background: var(--color3);
 min-width: 20em;
@@ -88,7 +115,7 @@ text-align: center;
     background: var(--color4);
     align-items: center;
     margin: auto;
-    margin-top: 16em;
+    margin-top: 10em;
     flex-direction: column;
 
 }
