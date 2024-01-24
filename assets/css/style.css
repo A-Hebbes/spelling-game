@@ -27,7 +27,7 @@ video guidance was adapted to suit my needs for the site. Also trying using vari
     box-sizing: border-box;
 	margin: 0;
     padding:0;
-    font-size: 16px;
+    font-size: 1em;
 	width: 100vw;
     --color1: #ffbe0b;
     --color2: #FFD86E;
@@ -43,13 +43,13 @@ header {
     font-weight: 900;
     margin: 0;
     color: var(--color4);
-    text-shadow: 2px 2px 4px rgba(204, 163, 0, 0.1),
-    3px 4px 4px rgba(204, 163, 0, 0.15),
-    4px 6px 4px rgba(204, 163, 0, 0.2),
-    5px 8px 4px rgba(204, 163, 0, 0.25);
+    text-shadow: 0.125em 0.125em 0.25em rgba(204, 163, 0, 0.1),
+    1.33em 0.25em 0.25em rgba(204, 163, 0, 0.15),
+    0.25em 0.375em 0.25em rgba(204, 163, 0, 0.2),
+    0.3125em 0.5em 0.25em rgba(204, 163, 0, 0.25);
 }
 
-h2 {font-size: 28px;
+h2 {font-size: 1.75em;
     text-align: center;
     color: var(--color4)}
 /*
@@ -61,9 +61,9 @@ p   {color: var(--color4)}
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1280px;
+    max-width: 80em;
     margin: 0 auto;
-    padding: 32px;
+    padding: 2em;
 }
 
 
@@ -90,14 +90,14 @@ p   {color: var(--color4)}
 }
 
 .btn {
-    font-size: 38.4px;
-    padding: 32px 0px;
-    width: 480px;
-    margin: 32px;
+    font-size: 2.4;
+    padding: 2em 0em;
+    width: 30em;
+    margin: 2em;
     text-decoration: underline;
     color: var(--color4);
     text-align: center;
-    border: 2px solid;
+    border: 0.125em solid;
     border-color: var(--color4);
 
 }
@@ -107,8 +107,8 @@ p   {color: var(--color4)}
   -webkit-transition: 1s ease;
 }
 
-.fa-message {font-size: 38.4px;
-             margin-left: 16px;
+.fa-message {font-size: 2.4em;
+             margin-left: 1em;
 }
 
 /* Modal used for contact form was guided by youtube video: https://www.youtube.com/watch?v=KjQ8uvAt9kQ */
@@ -150,8 +150,8 @@ p   {color: var(--color4)}
 
 .modal-close{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625em;
+    right: 0.625em;
     }
 
 .modal-close:hover {
@@ -163,8 +163,8 @@ p   {color: var(--color4)}
 
 .modal-close-rules {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625em;
+    right: 0.625em;
     }
 
 .modal-close-rules:hover {
