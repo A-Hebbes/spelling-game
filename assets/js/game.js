@@ -1,4 +1,4 @@
-// Support for game.JS provided by Ollie Grubb. Stack Overflow and Chat GPT used to help find bugs //
+
 
 var score = 0
 var question = 0
@@ -42,7 +42,7 @@ function answerGuess(buttonNumber){
     console.log(question)
     setQuestion(question)
 
-    // Modal for end of game //
+    
 
     var modalEnd = document.getElementById ('modal-end')
 var modalClose = document.querySelector ('.modal-close-end')
@@ -56,7 +56,7 @@ var modalHome = document.querySelector ('.modal-home')
     
     };
     
-    // location.reload advice gained from W3C page https://www.w3schools.com/jsref/met_loc_reload.asp#:~:text=Window%20location.reload()&text=The%20reload()%20method%20reloads,reload%20button%20in%20your%20browser.//
+    
 
     modalHome.addEventListener('click', function(){
         modalEnd.classList.remove('con-active');
