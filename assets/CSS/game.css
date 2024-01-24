@@ -6,7 +6,8 @@ body {color: var(--color2);
 
 .heading  {width:100vh;
     margin: 0 auto;
-    text-align: center;}
+    text-align: center;
+    color: var(--color4)}
 
 .fa-house {font-size: 2em;  
           color: var(--color4);
@@ -16,7 +17,7 @@ body {color: var(--color2);
 }
 
 .fa-house:hover {font-size: 2.5em;
-                 -webkit-transition: 0.2s ;}
+                 -webkit-transition: 0.2s ease;}
 
 
 

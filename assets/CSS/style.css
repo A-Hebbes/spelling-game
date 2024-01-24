@@ -6,7 +6,7 @@ video guidance was adapted to suit my needs for the site. Also trying using vari
  Color 1 - Background 
  Color 2 - Text 
  Color 3 - Question box  
- Color 4 - Boxes 
+ Color 4 - Boxes/heading text 
  Color 5 - Answer box shadow
 
 */
@@ -38,14 +38,23 @@ video guidance was adapted to suit my needs for the site. Also trying using vari
 
 }
 
-h1 {
-    font-size: 48px;
+header {
+    font-size: 2em;
+    font-weight: 900;
     margin: 0;
     color: var(--color4);
+    text-shadow: 2px 2px 4px rgba(204, 163, 0, 0.1),
+    3px 4px 4px rgba(204, 163, 0, 0.15),
+    4px 6px 4px rgba(204, 163, 0, 0.2),
+    5px 8px 4px rgba(204, 163, 0, 0.25);
 }
 
-h2 {font-size: 32px;}
-
+h2 {font-size: 28px;
+    text-align: center;
+    color: var(--color4)}
+/*
+p   {color: var(--color4)}
+*/
 .container {
     width: 100vw;
     height: 100vh;
