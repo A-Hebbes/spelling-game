@@ -25,7 +25,7 @@ contactBtn.addEventListener ('click', function(event) {
 
 modalCloseRules.addEventListener('click', function(){
 modalRules.classList.remove('con-active');
-    console.log ("hello")
+    
 });
 
  

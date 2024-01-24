@@ -8,20 +8,18 @@ body {color: var(--color2);
     margin: 0 auto;
     text-align: center;}
 
-.fa-house {font-size: 38.4px;
-           
-           font-size: 38.4px;
+.fa-house {font-size: 2em;  
           color: var(--color4);
           text-align: center;
           border-color: var(--color4);
          background: var(--color1);
 }
 
-.btn-home {background: var(--color1);}
-            
+.fa-house:hover {font-size: 2.5em;
+                 -webkit-transition: 0.2s ;}
 
 
-}
+
 
 .game-page {
 display: flex;
