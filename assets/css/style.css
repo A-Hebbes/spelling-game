@@ -237,8 +237,8 @@ opacity: 1;
 
 .modal {
 position: relative;
-height: 80%;
-width: 50%;
+height: 100%;
+width: 100%;
 padding: 1rem;
 display: flex;
 justify-content: center;
