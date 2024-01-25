@@ -253,8 +253,8 @@ background-color: var(--color2);
 
 .modal-close{
 position: absolute;
-top: 0.625em;
-right: 0.625em;
+top: 1.5em;
+right: 1.5em;
 }
 
 .modal-close:hover {
