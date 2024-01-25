@@ -212,7 +212,7 @@ h2 {
     margin-left: 1em;
 }
 
-.modal-style { position: fixed;
+.modal-style { 
     top: 0;
     left:0;
     width: 100%;
