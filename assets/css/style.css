@@ -28,7 +28,7 @@ video guidance was adapted to suit my needs for the site. Also trying using vari
 	margin: 0;
     padding:0;
     font-size: 1em;
-	width: 100vw;
+	width: 100%;
     --color1: #ffbe0b;
     --color2: #FFD86E;
     --color3: #ff006e;
