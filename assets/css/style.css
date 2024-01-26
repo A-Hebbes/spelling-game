@@ -63,9 +63,8 @@ p   {color: var(--color4)}
     max-width: 80em;
     margin: 0 auto;
     padding: 2em;
+    padding-top: 0;
 }
-
-
 
 .flex-center {
     justify-content: center;
