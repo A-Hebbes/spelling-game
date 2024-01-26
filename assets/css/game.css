@@ -143,3 +143,38 @@ text-align: center;
     width: 0%;
 
 }
+
+@media screen and (max-width: 480px){
+
+    .heading  {
+        display: flex;
+        width:100vh;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--color4);
+    }
+    
+
+
+
+    .hud-item {
+        display: flex;
+        justify-content: center;
+        width: 33%;
+        margin-bottom: 4em;
+        
+        border-radius: 0.25em;
+        background: var(--color4);
+        align-items: center;
+        margin: auto;
+        margin-top: 25em;
+        flex-direction: column;
+    
+    }
+
+.space-below {
+    padding: 0;
+}
+
+
+}
