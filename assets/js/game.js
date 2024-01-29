@@ -14,6 +14,8 @@ function setQuestion(questionNumber){
     
 }
 
+
+
 var questionText = ["Q.1. ‘Look at the castle over …..', Frank said.", "Q.2. ….. are 100 centimetres in a metre.", "Q.3. It was ….. turn to ride the rollercoaster.", "Q.4. I like horses, ….. my favourite animal.", "Q.5. It’s …… birthday tomorrow, don’t forget.", "Q.6. How many biscuits are ….. in the jar?", "Q.7.‘You can borrow those boots,’ Mary said. ‘It’s ok, ….. mine.’", "Q.8. ‘….. hair is long and black.’", "Q.9. ‘How many questions are …. left?’", "Q.10. ‘Anyone who finishes this spelling challenge has done …. best.’"]
 var ansBoxOne = ["Their", "Their", "Their", "Their", "Their", "Their", "Their", "Their", "Their", "Their"]
 var ansBoxTwo = ["There", "There", "There", "There", "There", "There", "There", "There", "There", "There"]
@@ -25,6 +27,8 @@ setQuestion(question)
 
 
 function answerGuess(buttonNumber){
+    var tick = document.getElementByClassName ('tick-answer-indicator')
+    var cross= document.getElementbyClassName ('cross-answer-indicator')
 
 
     
