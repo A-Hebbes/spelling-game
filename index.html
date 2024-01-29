@@ -1,109 +1,90 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Inter&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Spelling Game</title>
-</head>
-<body>
-    <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <header>
-            <h1>There, They're, or Their Game</h1>
-        </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Inter&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script>
+        <title>Spelling Game</title>
+    </head>
 
-            <h2>The game where you have to complete sentences with there, they're, or their. </h2>
+    <body>
+        <div class="container">
+            <div id="home" class="flex-column flex-center">
+                <header>
+                    <h1>There, They're, or Their Game</h1>
+                </header>
 
-            <a href="assets/html/game.html" class="btn">Play</a>
-            <a href="#" id="rules-btn" class="btn rules-btn">How To Play</a>
-            <a href="#" id="contact-btn" class="btn contact-btn">Contact Us<i class="fa-regular fa-message"></i></a>
+                <h2>The game where you have to complete sentences with there, they're, or their. </h2>
+
+                <a href="assets/html/game.html" class="btn">Play</a>
+                <a href="#" id="rules-btn" class="btn rules-btn">How To Play</a>
+                <a href="#" id="contact-btn" class="btn contact-btn">Contact Us<i class="fa-regular fa-message"></i></a>
+            </div>
         </div>
 
-    </div>
+        <!-- Guidance on modals taken from youtube video https://www.youtube.com/watch?v=KjQ8uvAt9kQ Form use and features were adapted to meet the needs of the project -->
+        <!-- Modal for contact form -->
 
-    <!-- Guidance on modals taken from youtube video https://www.youtube.com/watch?v=KjQ8uvAt9kQ Form use and features were adapted to meet the needs of the project -->
-<!-- Modal for contact form -->
+        <div  id="modal-contact" class="modal-style">
+            <div class="modal">
+                <h2>Let Us Know</h2>
+                <p>Did you notice any improvements we could make? We would love to hear from you.</p>
+                <p class="bold">What brought you to the quiz?</p>
 
-    <div  id="modal-contact" class="modal-style">
-        <div class="modal">
-            <h2>Let Us Know</h2>
-            <p>Did you notice any improvements we could make? We would love to hear from you.</p>
-            <p class="bold">What brought you to the quiz?</p>
+                <div class="space-below">
+                    <input type="radio" id="teacher" name="teacher">
+                    <label for="teacher">I am a teacher</label>
+                </div>
+                    
+                <div class="space-below">
+                    <input type="radio" id="student" name="student">
+                    <label for="student">I'm a student</label>
+                </div>
+                    
+                <div class="space-below">
+                    <input type="radio" id="parent" name="parent">
+                    <label for="parent">I'm a parent</label>
+                </div>
+                
+                <label for="feedback" class="space-below">What can we help you with?</label>
 
-        <div class="space-below">
-			<input type="radio" id="teacher" name="teacher">
-			<label for="teacher">I am a teacher</label>
-		</div>
-            
-            <div class="space-below">
-			<input type="radio" id="student" name="student">
-			<label for="student">I'm a student</label>
-		</div>
-            
-            <div class="space-below">
-			<input type="radio" id="parent" name="parent">
-			<label for="parent">I'm a parent</label>
-        </div>
-        
-		
-        <label for="feedback" class="space-below">What can we help you with?</label>
+                <textarea name="feedback" id="feedback" class="space-below" placeholder="Tell us what we could improve or just let us know if you loved the game." cols="80" rows="5"></textarea>
 
-        
-        
+                <button type="submit"><strong>Submit</strong></button>
 
-        <textarea name="feedback" id="feedback" class="space-below" placeholder="Tell us what we could improve or just let us know if you loved the game." cols="80" rows="5"></textarea>
-
-        
-
-        <button type="submit"><strong>Submit</strong></button>
-
-        <span class="modal-close">X</span>
-
-
-           
-
+                <span class="modal-close">X</span>
+            </div>
         </div>
 
-    </div>
+        <!-- Modal for rules page -->
 
-    <!-- Modal for rules page -->
+    
+        <div  id="modal-rules" class="modal-style">
+            <div class="modal">
 
-   
-    <div  id="modal-rules" class="modal-style">
+                <h1>Here's How to Play </h1>
 
-        <div class="modal">
+                <ol>
+                    <li>Click on the play button</li>
+                    <li>Each question has a word missing</li>
+                    <li>Read the question</li>
+                    <li>Decide which word you need to use to complete the sentence</li>
+                    <li>Click the button with your selected word</li>
+                    <li>There are 10 questions complete them all and see how you do</li>
+                </ol>
+                <h2>Refresh Your Understanding</h2>
+                <p>This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms. </p>
+                <br>
+                <p>This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms.</p>
 
-            <h1>Here's How to Play </h1>
+                <span class="modal-close-rules">X</span>
 
-            <ol>
-                <li>Click on the play button</li>
-                <li>Each question has a word missing</li>
-                <li>Read the question</li>
-                <li>Decide which word you need to use to complete the sentence</li>
-                <li>Click the button with your selected word</li>
-                <li>There are 10 questions complete them all and see how you do</li>
-            </ol>
-            <h2>Refresh Your Understanding</h2>
-            <p>This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms. </p>
-            <br>
-            <p>This will be a brief bit of information about the there/their/they're homonyms.This will be a brief bit of information about the there/their/they're homonyms.</p>
-
-            <span class="modal-close-rules">X</span>
-
+            </div>
         </div>
 
-
-
-    </div>
-
-
-
-<script src="assets/js/script.js"></script>
-
-</body>
+    </body>
 </html>
