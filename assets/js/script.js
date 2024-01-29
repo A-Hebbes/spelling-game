@@ -1,3 +1,5 @@
+window.addEventListener("DOMContentLoaded", (event) => {
+
 var contactBtn = document.querySelector ('.contact-btn');
 var modalCon = document.getElementById ('modal-contact')
 var modalClose = document.querySelector ('.modal-close')
@@ -28,4 +30,4 @@ modalRules.classList.remove('con-active');
     
 });
 
- 
+});
