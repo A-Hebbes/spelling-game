@@ -162,7 +162,7 @@ h2 {font-size: 1.75em;
 }
 
 .space-below {
-    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 
@@ -220,7 +220,7 @@ h2 {
 
 
 .con-active {
-visibility:visible;
+visibility:visible !important;
 opacity: 1;
 }
 
