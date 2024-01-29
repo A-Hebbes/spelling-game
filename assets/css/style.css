@@ -12,20 +12,18 @@ video guidance was adapted to suit my needs for the site. Also trying using vari
 */
 
 :root {
-    
     font-family: 'Comic Neue', sans-serif;
     box-sizing: border-box;
-	margin: 0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-size: 1em;
-	width: 100%;
+    width: 100%;
     --color1: #ffbe0b;
     --color2: #FFD86E;
     --color3: #ff006e;
     --color4: #8338ec;
     --color5: #3a86ff;
     background-color: var(--color1)
-
 }
 
 header {
@@ -34,14 +32,16 @@ header {
     margin-top: 2.5em;
     color: var(--color4);
     text-shadow: 0.125em 0.125em 0.25em rgba(204, 163, 0, 0.1),
-    1.33em 0.25em 0.25em rgba(204, 163, 0, 0.15),
-    0.25em 0.375em 0.25em rgba(204, 163, 0, 0.2),
-    0.3125em 0.5em 0.25em rgba(204, 163, 0, 0.25);
+                 1.33em 0.25em 0.25em rgba(204, 163, 0, 0.15),
+                 0.25em 0.375em 0.25em rgba(204, 163, 0, 0.2),
+                 0.3125em 0.5em 0.25em rgba(204, 163, 0, 0.25);
 }
 
-h2 {font-size: 1.75em;
+h2 {
+    font-size: 1.75em;
     text-align: center;
-    color: var(--color4)}
+    color: var(--color4)
+}
 
 .container {
     height: 100vh;
@@ -57,18 +57,15 @@ h2 {font-size: 1.75em;
 .flex-center {
     justify-content: center;
     align-items: center;
-
 }
 
 .flex-column {
     display: flex;
     flex-direction: column;
-
 }
 
 .justify-center {
     justify-content: center;
-
 }
 
 .text-center {
@@ -86,40 +83,38 @@ h2 {font-size: 1.75em;
     border: 0.125em solid;
     border-color: var(--color4);
     border-radius: 50%;
-
 }
 
-.btn:hover {background-color: var(--color4);
+.btn:hover {
+    background-color: var(--color4);
     color: var(--color1);
-  -webkit-transition: 1s ease;
+    -webkit-transition: 1s ease;
 }
 
-.fa-message {font-size: 1em;
-             margin-left: 1em;
+.fa-message {
+    font-size: 1em;
+    margin-left: 1em;
 }
 
 /* Modal used for contact form was guided by youtube video: https://www.youtube.com/watch?v=KjQ8uvAt9kQ */
 
-.modal-style { position: fixed;
-             top: 0;
-             left:0;
-             width: 100%;
-             height: 100vh;
-             background-color: var(--color2);
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             visibility: hidden;
-             opacity: 0;
-             transition: visibility 0.5s ease, opacity 0.5s ease;
-
-
-
+.modal-style {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s ease, opacity 0.5s ease;
 }
 
-
 .con-active {
-    visibility:visible !important;
+    visibility: visible !important;
     opacity: 1;
 }
 
@@ -135,136 +130,119 @@ h2 {font-size: 1.75em;
     background-color: white;
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     top: 0.625em;
     right: 0.625em;
-    }
+}
 
 .modal-close:hover {
-
     color: var(--color4);
     cursor: pointer;
-    
+
 }
 
 .modal-close-rules {
     position: absolute;
     top: 0.625em;
     right: 0.625em;
-    }
+}
 
 .modal-close-rules:hover {
-
     color: var(--color4);
     cursor: pointer;
-    
 }
 
 .space-below {
     margin-bottom: 0.5em;
 }
 
-
 @media screen and (max-width: 480px) {
 
-.container {
-    max-width: 100%;
-    font-size: 1.5em;
+    .container {
+        max-width: 100%;
+        font-size: 1.5em;
+    }
 
-}
+    header {
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
 
-header {
-    font-size: 1.5em;
-    margin-top: 2em;
-}
+    h2 {
+        font-size: 1em;
+        text-align: center;
+        color: var(--color4);
+        margin: 0.2em;
+    }
 
-h2 {
-    font-size: 1em;
-    text-align: center;
-    color: var(--color4);
-    margin: 0.2em;
-}
+    .btn {
+        font-size: 1.5em;
+        padding: 0.25em 0em;
+        margin: 0.2em;
+        text-decoration: underline;
+        color: var(--color4);
+        text-align: center;
+        border: 0.125em solid;
+        border-color: var(--color4);
+    }
 
-.btn {
-    font-size: 1.5em;
-    padding: 0.25em 0em;
-    margin: 0.2em;
-    text-decoration: underline;
-    color: var(--color4);
-    text-align: center;
-    border: 0.125em solid;
-    border-color: var(--color4);
-}
+    .fa-message {
+        font-size: 1em;
+        margin-left: 1em;
+    }
 
-.fa-message {font-size: 1em;
-    margin-left: 1em;
-}
+    .modal-style {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.5s ease, opacity 0.5s ease;
+    }
 
-.modal-style { 
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.5s ease, opacity 0.5s ease;
+    .con-active {
+        visibility: visible !important;
+        opacity: 1;
+    }
 
+    .modal {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: var(--color2);
+        color: black;
+    }
 
+    .modal-close {
+        position: absolute;
+        top: 1.5em;
+        right: 1.5em;
+    }
 
-}
+    .modal-close:hover {
+        color: var(--color4);
+        cursor: pointer;
+    }
 
+    .modal-close-rules {
+        position: absolute;
+        top: 1.5em;
+        right: 1.5em;
+    }
 
-.con-active {
-visibility:visible !important;
-opacity: 1;
-}
-
-.modal {
-position: relative;
-height: 100%;
-width: 100%;
-padding: 1rem;
-display: flex;
-justify-content: center;
-flex-direction: column;
-justify-content: space-around;
-background-color: var(--color2);
-color: black;
-}
-
-.modal-close{
-position: absolute;
-top: 1.5em;
-right: 1.5em;
-}
-
-.modal-close:hover {
-
-color: var(--color4);
-cursor: pointer;
-
-}
-
-.modal-close-rules {
-position: absolute;
-top: 1.5em;
-right: 1.5em;
-}
-
-.modal-close-rules:hover {
-
-color: var(--color4);
-cursor: pointer;
-
-}
-
-
-
-
-
+    .modal-close-rules:hover {
+        color: var(--color4);
+        cursor: pointer;
+    }
 }
