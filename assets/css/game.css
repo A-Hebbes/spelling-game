@@ -237,6 +237,11 @@ justify-content: center;
         left: 50%;
         width: 25em;
         height:25em;
+        margin-left: -9em;
+        position: fixed;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         visibility: visible;
     }
         }
