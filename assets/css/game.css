@@ -233,7 +233,11 @@ justify-content: center;
 
 .answer-indicator
     {
-        top: 50%
+        top: 50%;
+        left: 50%;
+        width: 25em;
+        height:25em;
+        visibility: visible;
     }
         }
     
