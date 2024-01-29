@@ -27,8 +27,8 @@ setQuestion(question)
 
 
 function answerGuess(buttonNumber){
-    var tick = document.getElementByClassName ('tick-answer-indicator')
-    var cross= document.getElementbyClassName ('cross-answer-indicator')
+    var tick = document.getElementById ('tick-answer-indicator')
+    var cross= document.getElementById ('cross-answer-indicator')
 
 
     
@@ -36,10 +36,17 @@ function answerGuess(buttonNumber){
     if (buttonNumber == correctAnswers[question]) {
         console.log("True")
         document.getElementById ("score").innerText = ++score;
+        tick.classList.add ('visible');
+        setTimeout(function(){
+            tick.classList.remove('visible');
+        }, 1500);
     }
 
     else {
-        console.log("False")
+        cross.classList.add('visible');
+        setTimeout(function(){
+            cross.classList.remove('visible');
+        }, 1500);
     }
 
     ++question

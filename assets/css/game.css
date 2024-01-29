@@ -243,7 +243,7 @@ justify-content: center;
         display:flex;
         justify-content: center;
         align-items: center;
-        visibility: visible;
+        visibility: hidden;
     }
 
     .tick {
@@ -259,6 +259,18 @@ justify-content: center;
     .cross {
         color: red;
         font-size: 8rem;
+    }
+
+    .visible {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 2s linear;
     }
         }
     
