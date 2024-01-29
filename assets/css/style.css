@@ -42,9 +42,7 @@ header {
 h2 {font-size: 1.75em;
     text-align: center;
     color: var(--color4)}
-/*
-p   {color: var(--color4)}
-*/
+
 .container {
     height: 100vh;
     display: flex;
@@ -121,7 +119,7 @@ p   {color: var(--color4)}
 
 
 .con-active {
-    visibility:visible;
+    visibility:visible !important;
     opacity: 1;
 }
 
