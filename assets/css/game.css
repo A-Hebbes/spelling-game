@@ -230,6 +230,11 @@ justify-content: center;
     color: black;
     background-color: var(--color2);
 }
+
+.answer-indicator
+    {
+        top: 50%
+    }
         }
     
 
