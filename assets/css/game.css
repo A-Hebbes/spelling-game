@@ -238,11 +238,27 @@ justify-content: center;
         width: 25em;
         height:25em;
         margin-left: -9em;
+        margin-top: -15em;
         position: fixed;
         display:flex;
         justify-content: center;
         align-items: center;
         visibility: visible;
+    }
+
+    .tick {
+
+        color: green;
+        font-size: 8rem;
+
+
+
+    }
+
+
+    .cross {
+        color: red;
+        font-size: 8rem;
     }
         }
     
