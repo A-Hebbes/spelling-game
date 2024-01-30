@@ -60,9 +60,7 @@ var modalClose = document.querySelector ('.modal-close-end')
 var modalHome = document.querySelector ('.modal-home')
 
     if (question == questionEnd){
-     
-    
-    
+        document.getElementById("end-score").innerHTML='You got:'+score;
         modalEnd.classList.add ('con-active');
     
     };
