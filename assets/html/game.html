@@ -1,97 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spelling Game</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/game.css">
-    <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
-</head>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Spelling Game</title>
+            <link rel="stylesheet" href="../css/style.css">
+            <link rel="stylesheet" href="../css/game.css">
+            <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
+            <script src="../js/game.js"></script> 
+        </head>
 
 <!--Guidance for this site was taken from the youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY and adapted to suit my needs -->
 <body>
-
     <div class="game-page">
 
-        
-        
+        <div class="game-wrapper">
 
-    <div class="game-wrapper">
+            <div class="heading">
+                <h1 >Heading for Game </h1>
+            </div> 
 
-        <div class="heading">
-            <h1 >Heading for Game </h1>
+            <div class="hud-item">
+                <p class="hud-prefix space-below">
+                    Score
+                </p>
+                
+                <h1 class="hud-main-text space-below" id="score">
+                    0
+                </h1>
+            </div>
 
+            <div class="question-container">
+                <p id="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec mollis est. In eget hendrerit ipsum. Suspendisse tempor mattis eros sit amet imperdiet. Curabitur vel semper lorem, ut tincidunt sapien.</p>
+            </div>
+
+            <div class="button-wrapper">
             
-        </div> 
-        
-    
+            <div onclick="answerGuess(1)" class="answer-container">
+                <p id="ansBox1" class="answer-text" data-number="1">There</p>  
+            </div>
 
-        <div class="hud-item">
-            <p class="hud-prefix space-below">
-                Score
-            </p>
+            <div onclick="answerGuess(2)" class="answer-container">
+                <p id="ansBox2" class="answer-text" data-number="2">Their</p> 
+            </div>  
+
+            <div onclick="answerGuess(3)" class="answer-container">
+                <p id="ansBox3" class="answer-text" data-number="3">They're</p>   
+            </div>
+
+            </div>
             
-            <h1 class="hud-main-text space-below" id="score">
-                0
-            </h1>
-            
+            <div class="space-below">
+                <a href="../../index.html" class="fa-solid fa-house"></a>
+            </div>
         </div>
-
-        <div id="question" class="question-container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec mollis est. In eget hendrerit ipsum. Suspendisse tempor mattis eros sit amet imperdiet. Curabitur vel semper lorem, ut tincidunt sapien. </div>
-    
-        
-        <div class="button-wrapper">
-        
-        <div onclick="answerGuess(1)" class="answer-container">
-        <p id="ansBox1" class="answer-text" data-number="1">There</p>  
-        </div>
-
-        <div onclick="answerGuess(2)" class="answer-container">
-        <p id="ansBox2" class="answer-text" data-number="2">Their</p> 
-        </div>  
-
-        <div onclick="answerGuess(3)" class="answer-container">
-        <p id="ansBox3" class="answer-text" data-number="3">They're</p>   
-    </div>
-
-    </div>
-
-    <a href="../../index.html" class="fa-solid fa-house"></a>
-   
-    </div>
 
 <!--Answer correct/wrong indicator-->
+
 <div id="tick-answer-indicator" class="answer-indicator">
     <i class="fa-solid fa-check tick"></i>
 </div>
 
 <div id="cross-answer-indicator" class="answer-indicator">
-
     <i class="fa-solid fa-x cross"></i>
-
-    
 </div>
 
+        <!-- Modal For Game End -->
 
+            <div id ="modal-end" class="modal-style">
 
-<!-- Modal For Game End -->
+                <div class="modal">
+                <h2>Well Done on Completing the Quiz</h2>
+                <h2>How do you think you did?</h2>
+                <h2 id="end-score">endScore</h2>
+                <p>Score: 8-10 Great Work Keep Practicing</p>
+                <p>Score: 5-8 I Bet You Could Get 10 Next Time, Good Job</p>
+                <p>Score: 0-5 Practice makes permanent. Check the use of the words then come back to have another go.</p>
+                <button href="../../index.html" class="modal-home">Return Home</button>
+                </div>   
 
-    <div id ="modal-end" class="modal-style">
-        <div class="modal-rules modal">
-            <h2>Well Done on Completing the Quiz</h2>
-            <h2>How do you think you did?</h2>
-            <h2 id="end-score">endScore</h2>
-            <p>Score: 8-10 Great Work Keep Practicing</p>
-            <p>Score: 5-8 I Bet You Could Get 10 Next Time, Good Job</p>
-            <p>Score: 0-5 Practice makes permanent. Check the use of the words then come back to have another go.</p>
-            
-            <a href="../../index.html" class="modal-home">Return Home</a>
+            </div>
         </div>
-
-    </div>
-</div>
-    
-   <script src="../js/game.js"></script> 
-</body>
+    </body>
 </html>
