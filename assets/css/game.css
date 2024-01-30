@@ -131,33 +131,14 @@ justify-content: center;
 
 
 
-/* guidance on progress bars was taken from youtube video - https://www.youtube.com/watch?v=f4fB9Xg2JEY  and adapted for my project*/
 
-
-#progress-bar {
-    width: 66%;
-    height: 3em;
-    border: 0.375em solid var(--color4);
-    margin-top: 2em;
-    border-radius: 3.125em;
-    overflow: hidden;
-    margin-bottom: 2em;
-
-}
-
-#progressBarFull {
-    height: 100%;
-    background: var(--color4);
-    width: 0%;
-
-}
 
 /* Answer pop ups */
 
 .answer-indicator
     {
-        top: 50%;
-        left: 50%;
+        top: 60%;
+        left: 45%;
         width: 30em;
         height: 18em;
         margin-left: -9em;
@@ -280,6 +261,13 @@ justify-content: center;
     flex-direction: column;
     color: black;
     background-color: var(--color2);
+}
+
+.answer-indicator
+    {
+        top: 60%;
+        left: 25%;
+
 }
 
 }
