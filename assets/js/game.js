@@ -39,14 +39,14 @@ function answerGuess(buttonNumber){
         tick.classList.add ('visible');
         setTimeout(function(){
             tick.classList.remove('visible');
-        }, 1500);
+        }, 500);
     }
 
     else {
         cross.classList.add('visible');
         setTimeout(function(){
             cross.classList.remove('visible');
-        }, 1500);
+        }, 500);
     }
 
     ++question
