@@ -36,6 +36,7 @@ function answerGuess(buttonNumber){
     
     modalHome.addEventListener('click', function(){
         modalEnd.classList.remove('con-active');
+        location.href = (index.html);
         location.reload()
     });
 
