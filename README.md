@@ -3,30 +3,34 @@
 This is a website tagetted at children but which can be used by any English language learner, to help practice their skills with the tricky there, their, or they're homophone. The aim of the site is to provide guidance on the spelling skill whilst also allowing the user to test their understanding. There is also a contact form on the website in case users have any comments for improvements which could be made. 
 
 
-PUT IN PICTURE HERE
-![Spelliing Game](https://a-hebbes.github.io/spelling-game/)
+![Spelling Game Responsive Layout](assets/images/spelling-game-responsive.jpg)
 
 ## Features 
 
 
 ### Existing Features 
 
-**Navigation Bar**
-
-![rocks-off-nav](https://github.com/A-Hebbes/Project-1-Rocks-Off/assets/148571629/43b1f185-74a2-4e00-9f75-35a0d48d0a2d)
-
-
-- The navigation bar allows easy access around the site and includes links to the sections: About Us, Times and Prices, and Contact Us. 
-- As the website is a single page which scrolls the links take the user to the relevant section. 
-
-
 **Landing Page Image**
 
-![rocks-off-landing](https://github.com/A-Hebbes/Project-1-Rocks-Off/assets/148571629/5a9bbc5c-aa5f-4efa-968f-d11a14e63b2e)
+![rocks-off-landing](assets/images/spelling-game-landing.jpg)
 
-- The landing includes the name of the gym and brief welcome message.
+- The landing page is bright and colourful, a theme continued throughout the site. This provides an eye-catching hook for the site's main intended users, children. 
 
-- There is an eyecatching image of a woman bouldering to help emphasise the purpose of the website.
+- The heading is clearly displayed at the top and introduces the nature of the quiz that is to follow.
+
+- Below the heading further information is given on the purpose of the site. 
+
+
+**Navigation Buttons**
+
+![Navigation Buttons](assets/images/spelling-game-buttons.jpg)
+
+
+- The buttons on the landing page allow the user to easily navigate the site. 
+
+- The 'Play' button is at the top as this is the most important button for site use. This button directs the user to the game page. This is followed by the 'How to Play' button, this brings up a modal which gives a reminder of the knoweldge required and instructions on how to play. The final button is a 'Contact Us' button, which brings up a modal with a form which the user can fill in to provide feedback. 
+
+
 
 
 
