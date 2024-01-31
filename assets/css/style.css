@@ -130,7 +130,7 @@ h2 {
     justify-content: space-around;
     background-color: var(--color1);
     border: 2px solid var(--color4);
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .modal-close {
