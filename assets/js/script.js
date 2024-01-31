@@ -1,11 +1,15 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
+// Variables//
+
     const contactBtn = document.getElementById('contact-btn');
     const modalCon = document.getElementById('modal-contact');
     const modalClose = document.querySelector('.modal-close');
     const rulesBtn = document.getElementById('rules-btn');
     const modalRules = document.getElementById('modal-rules');
     const modalCloseRules = document.querySelector('.modal-close-rules');
+
+//functions//
 
     contactBtn.addEventListener('click', function(event) {
         event.preventDefault();
