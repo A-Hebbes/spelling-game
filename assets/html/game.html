@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="description" content="Educational quiz for English langauage learners. A place to practice spelling of homophones.">
-            <meta name="keywords" content="quiz, children, learner, education, spelling, test, school, English, homophone, fun, educational, learning">
-            <title>Spelling Game</title>
-            <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="../css/style.css">
-            <link rel="stylesheet" href="../css/game.css">
-        </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Educational quiz for English langauage learners. A place to practice spelling of homophones.">
+    <meta name="keywords"
+        content="quiz, children, learner, education, spelling, test, school, English, homophone, fun, educational, learning">
+    <title>Spelling Game</title>
+    <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
 
 <!--Guidance for this site was taken from the youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY and adapted to suit my needs -->
+
 <body>
     <div class="game-page">
 
@@ -21,7 +25,7 @@
                 <p class="hud-prefix space-below">
                     Score
                 </p>
-                
+
                 <h1 class="hud-main-text space-below" id="score">
                     0
                 </h1>
@@ -32,21 +36,21 @@
             </div>
 
             <div class="button-wrapper">
-            
-            <div onclick="answerGuess(1)" class="answer-container">
-                <p id="ansBox1" class="answer-text" data-number="1">There</p>  
+
+                <div onclick="answerGuess(1)" class="answer-container">
+                    <p id="ansBox1" class="answer-text" data-number="1">There</p>
+                </div>
+
+                <div onclick="answerGuess(2)" class="answer-container">
+                    <p id="ansBox2" class="answer-text" data-number="2">Their</p>
+                </div>
+
+                <div onclick="answerGuess(3)" class="answer-container">
+                    <p id="ansBox3" class="answer-text" data-number="3">They're</p>
+                </div>
+
             </div>
 
-            <div onclick="answerGuess(2)" class="answer-container">
-                <p id="ansBox2" class="answer-text" data-number="2">Their</p> 
-            </div>  
-
-            <div onclick="answerGuess(3)" class="answer-container">
-                <p id="ansBox3" class="answer-text" data-number="3">They're</p>   
-            </div>
-
-            </div>
-            
             <div class="space-below">
                 <a href="../../index.html" aria-label="Return Home">
                     Return Home
@@ -54,32 +58,34 @@
             </div>
         </div>
 
-<!--Answer correct/wrong indicator-->
+        <!--Answer correct/wrong indicator-->
 
-<div id="tick-answer-indicator" class="answer-indicator">
-    <i class="fa-solid fa-check tick"></i>
-</div>
+        <div id="tick-answer-indicator" class="answer-indicator">
+            <i class="fa-solid fa-check tick"></i>
+        </div>
 
-<div id="cross-answer-indicator" class="answer-indicator">
-    <i class="fa-solid fa-x cross"></i>
-</div>
+        <div id="cross-answer-indicator" class="answer-indicator">
+            <i class="fa-solid fa-x cross"></i>
+        </div>
 
-<!-- Modal For Game End -->
+        <!-- Modal For Game End -->
 
-            <div id ="modal-end" class="modal-style">
+        <div id="modal-end" class="modal-style">
 
-                <div class="modal">
+            <div class="modal">
                 <h2>Well Done on Completing the Quiz</h2>
                 <h2>How do you think you did?</h2>
                 <h2 id="end-score">endScore</h2>
                 <p>Score: 8-10 Great Work Keep Practicing</p>
                 <p>Score: 5-8 I Bet You Could Get 10 Next Time, Good Job</p>
-                <p>Score: 0-5 Practice makes permanent. Check the use of the words then come back to have another go.</p>
+                <p>Score: 0-5 Practice makes permanent. Check the use of the words then come back to have another go.
+                </p>
                 <a href="../../index.html" class="modal-home" aria-label="Return Home">Return Home</a>
-                </div>   
-
             </div>
+
         </div>
-        <script src="../js/game.js"></script> 
-    </body>
+    </div>
+    <script src="../js/game.js"></script>
+</body>
+
 </html>

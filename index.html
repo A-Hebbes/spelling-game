@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Educational quiz for English langauage learners. A place to practice spelling of homophones.">
-        <meta name="keywords" content="quiz, children, learner, education, spelling, test, school, English, homophone, fun, educational, learning">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Inter&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Spelling Game</title>
-    </head>
 
-    <body>
-        <div class="container">
-            <div id="home" class="flex-column flex-center">
-                <header>
-                    <h1>There, They're, or Their Game</h1>
-                </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Educational quiz for English langauage learners. A place to practice spelling of homophones.">
+    <meta name="keywords"
+        content="quiz, children, learner, education, spelling, test, school, English, homophone, fun, educational, learning">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Inter&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e62857fc86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Spelling Game</title>
+</head>
 
-                <h2>The game where you have to complete sentences with there, they're, or their. </h2>
+<body>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+            <header>
+                <h1>There, They're, or Their Game</h1>
+            </header>
 
-                <a href="assets/html/game.html" class="btn">Play</a>
-                <a href="#" id="rules-btn" class="btn rules-btn">How To Play</a>
-                <a href="#" id="contact-btn" class="btn contact-btn">Contact Us<i class="fa-regular fa-message"></i></a>
-            </div>
-        </div>
+            <h2>The game where you have to complete sentences with there, they're, or their. </h2>
 
-<!-- Guidance on modals taken from youtube video https://www.youtube.com/watch?v=KjQ8uvAt9kQ Form use and features were adapted to meet the needs of the project -->
-<!-- Modal for contact form -->
-
-        <div  id="modal-contact" class="modal-style">
-            <div class="modal">
-                <fieldset>
-                
-                    <form action="https://formdump.codeinstitute.net/" method="post">
-
-                        <h2>Let Us Know</h2>
-                        <p>Did you notice any improvements we could make? We would love to hear from you.</p>
-                        <p class="bold">What brought you to the quiz?</p>
-
-                        <div class="space-below">
-                            <input type="radio" id="teacher" name="user">
-                            <label for="teacher">I'm a teacher</label>
-                        </div>
-                    
-                        <div class="space-below">
-                            <input type="radio" id="student" name="user">
-                            <label for="student">I'm a student</label>
-                        </div>
-                    
-                        <div class="space-below">
-                            <input type="radio" id="parent" name="user">
-                            <label for="parent">I'm a parent</label>
-                        </div>
-                
-                        <label for="feedback" class="space-below">What can we help you with?</label>
-
-                        <textarea name="feedback" id="feedback" class="space-below" placeholder="Tell us what we could improve or just let us know if you loved the game." cols="80" rows="5"></textarea>
-
-                        <button type="submit"><strong>Submit</strong></button>
-
-                    </form>
-                    <span class="modal-close">X</span>
-                </fieldset>
-            </div>                
+            <a href="assets/html/game.html" class="btn">Play</a>
+            <a href="#" id="rules-btn" class="btn rules-btn">How To Play</a>
+            <a href="#" id="contact-btn" class="btn contact-btn">Contact Us<i class="fa-regular fa-message"></i></a>
         </div>
     </div>
 
-        <!-- Modal for rules page -->
+    <!-- Guidance on modals taken from youtube video https://www.youtube.com/watch?v=KjQ8uvAt9kQ Form use and features were adapted to meet the needs of the project -->
+    <!-- Modal for contact form -->
 
-    
-    <div  id="modal-rules" class="modal-style">
-            <div class="modal">
+    <div id="modal-contact" class="modal-style">
+        <div class="modal">
+            <fieldset>
+
+                <form action="https://formdump.codeinstitute.net/" method="post">
+
+                    <h2>Let Us Know</h2>
+                    <p>Did you notice any improvements we could make? We would love to hear from you.</p>
+                    <p class="bold">What brought you to the quiz?</p>
+
+                    <div class="space-below">
+                        <input type="radio" id="teacher" name="user">
+                        <label for="teacher">I'm a teacher</label>
+                    </div>
+
+                    <div class="space-below">
+                        <input type="radio" id="student" name="user">
+                        <label for="student">I'm a student</label>
+                    </div>
+
+                    <div class="space-below">
+                        <input type="radio" id="parent" name="user">
+                        <label for="parent">I'm a parent</label>
+                    </div>
+
+                    <label for="feedback" class="space-below">What can we help you with?</label>
+
+                    <textarea name="feedback" id="feedback" class="space-below" placeholder="Tell us what we could improve or just let us know if you loved the game." cols="80" rows="5"></textarea>
+
+                    <button type="submit"><strong>Submit</strong></button>
+
+                </form>
+                <span class="modal-close">X</span>
+            </fieldset>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal for rules page -->
+
+
+    <div id="modal-rules" class="modal-style">
+        <div class="modal">
 
             <h1>Here's How to Play </h1>
             <ol>
-            <li>Click on the play button</li>
-            <li>Each question has a word missing</li>
-            <li>Read the question</li>
-            <li>Decide which word you need to use to complete the sentence</li>
-            <li>Click the button with your selected word</li>
-            <li>There are 10 questions complete them all and see how you do</li>
+                <li>Click on the play button</li>
+                <li>Each question has a word missing</li>
+                <li>Read the question</li>
+                <li>Decide which word you need to use to complete the sentence</li>
+                <li>Click the button with your selected word</li>
+                <li>There are 10 questions complete them all and see how you do</li>
             </ol>
             <h2>Refresh Your Understanding</h2>
-            <p class="space-below">Let’s recap the three words and their meanings: 'there,' 'their,' and 'they're.' 'There' is for places, like 'I want to go there.' 'Their' is for things that belong to people, such as 'It's their toy.' And 'they're' is just a quicker way of writing 'they are,' like saying 'They're going to the park.'</p>
+            <p class="space-below">Let’s recap the three words and their meanings: 'there,' 'their,' and 'they're.'
+                'There' is for places, like 'I want to go there.' 'Their' is for things that belong to people, such as
+                'It's their toy.' And 'they're' is just a quicker way of writing 'they are,' like saying 'They're going
+                to the park.'</p>
             <p>That’s all there is to it, 'there' for places, 'their' for belonging, and 'they're' for they are."</p>
             <span class="modal-close-rules">X</span>
 
-            </div>
-            </div>
-        <script src="assets/js/script.js"></script>
-    </body>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
