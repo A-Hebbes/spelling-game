@@ -80,8 +80,7 @@ The intention was to make an educational website using HTML, CSS, and JavaScript
 
 **How To Play Modal**
 
-INCLUDE IMAGE HERE ONCE YOU HAVE EDITED THE PAGE TEXT AND CENTRED HEADING
-![rocks-off-about](https://github.com/A-Hebbes/Project-1-Rocks-Off/assets/148571629/b1f2c839-de1a-46d8-8c46-39a7e326ddff)
+![Instructions Modal](assets/images/spelling-game-instructions.jpg)
 
 - The 'How To Play' modal gives a clear list of instructions on how to play the game. 
 
@@ -93,9 +92,7 @@ INCLUDE IMAGE HERE ONCE YOU HAVE EDITED THE PAGE TEXT AND CENTRED HEADING
 
 **Contact Us Modal**
 
-![rocks-off-table](https://github.com/A-Hebbes/Project-1-Rocks-Off/assets/148571629/139f5b9b-61c4-4c30-91c5-fa0035ccdcba)
-
-INCLUDE IMAGE HERE ONCE YOU HAVE MOVED THE SUBMIT Button TO CENTRE
+![Instructions Modal](assets/images/spelling-game-contact.jpg)
 
 - This modal is displayed when the contact us button is pressed on the home page.  
 
