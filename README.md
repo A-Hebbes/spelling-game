@@ -262,6 +262,8 @@ Listed below are more sites that I used to gain understanding of issues I was ha
 
 (https://coolors.co/)
 
+(https://www.labnol.org/beautifier/)
+
 (https://www.thoughtco.com/)
 
 (https://stackoverflow.com/)
