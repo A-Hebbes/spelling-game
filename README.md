@@ -137,6 +137,75 @@ HTML Validation
 JS HINT 
 - JSHint highlighted a number of missing semi-colons and also a string that was being read as a variable because it did not have inverted commas around it. With these fixes made the JavaScript passed the validator. 
 
+### Lighthouse 
+
+The first lighthouse test came back with the following scores. 
+
+![First Lighthouse Test Results](assets/images/spelling-game-lighthouse-1.png) 
+
+Accessibility was improved by a changing of colours on the site to improve readability. The pink question boxes on the game page were made a darker shade and the text on question box and answer buttons was made into a brighter yellow. This provided better contrast and so improved readability. 
+
+![Lighthouse Readability Issue](assets/images/spelling-game-colours.png) 
+
+There was also an issue with the home button, which was a font-awesome home icon. Lighthouse flagged this as an issue in relation to aria-hidden. I tried a few fixes suggested online, for example placing hidden text so that a screen reader could still read the text and the icon could remain as the only visible feature of the button. These still did not improve the issue, so I replaced the icon with text. I will have to do some more work to figure out this problem and why it occured. 
+
+![Lighthouse Aria Hidden Issue](assets/images/spelling-game-house.jpg) 
+
+### Devices 
+- The site was tested on both **Chrome** and **Safari**
+- Devices used were iPhone SE, MacBook Air and iPad. 
+
+### Testing User Stories
+
+1. As a user I want to test my use of their, there, or they're in a number of contexts. 
+    - There are ten questions, each is a sentence with one word missing. The questions are a mixture of direct speech, and declarative statments. 
+
+2. As a user I want to have support with the spellings of the target words so that I can see the words to embed the spelling, whilst practising the use of the words in context. 
+    - There are three button options and the target words are displayed throughout. 
+
+3. As a user I want to know how well I did on the game. 
+    - There is a score counter at the top of the game page which updates as the game is played. There is also a final score displayed on the game end modal. 
+
+4. As a user I want to know how I am doing without looking at the score counter after each question. 
+    - There is a green tick or red cross displayed after each answer guess, dependant upon the user's success with the question. 
+
+### Fixed Bugs
+
+- There was an error displaying in the console when the page was loaded. To rectify this I added an event listener to allow the DOM content to load prior to the running of the rest of the JavaScript. 
+
+- There was an issue with the contact modal screen on modal devices, the page overflowed to the left of the screen but could not be accessed. Initially I was unsure what was causing the issue, but found it to be the textarea in the end. To fix this I changed the box-sizing in the media query, and this resolved the issue. 
+
+### Functionality
+
+- All buttons were tested and are accessible. 
+- All buttons have been tested to ensure they react as expected when hovered over. 
+- The game works as intended. 
+- All modals work as intended and when teh user exits them, they return to the home page view as expected. 
+
+### Future Features
+
+- The inclusion of a progress bar, could be a good feature in the future. 
+- Additional quizzes which test different skills would also enhance the site. 
+
+## Deployment 
+
+- The project was deployed to Github Pages and used the following steps: 
+
+1. Sign in to GitHub and access the [repository](https://github.com/A-Hebbes/spelling-game)
+2. Go to settings which can be found towards the top of the repository page. 
+3. Once in settings, scroll down to Github Pages.
+4. Select the source as main. 
+5. Now click save and refresh the page. 
+
+## Credits 
+
+### Code
+
+### Acknowledgements
+
+
+
+
 
 
 
