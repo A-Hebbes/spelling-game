@@ -1,18 +1,65 @@
 # There, Their, or They're Spelling Game 
 
-This is a website tagetted at children but which can be used by any English language learner, to help practice their skills with the tricky there, their, or they're homophone. The aim of the site is to provide guidance on the spelling skill whilst also allowing the user to test their understanding. There is also a contact form on the website in case users have any comments for improvements which could be made. 
-
+The intention was to make an educational website using HTML, CSS, and JavaScript. This is a website tagetted at children but which can be used by any English language learner, to help practice their skills with the tricky there, their, or they're homophone. The aim of the site is to provide guidance on the spelling skill whilst also allowing the user to test their understanding of the use of the words in context. There is also a contact form on the website in case users have any comments for improvements which could be made. 
 
 ![Spelling Game Responsive Layout](assets/images/spelling-game-responsive.jpg)
 
-## Features 
+## Contents
+- [User Experience](#user-experience-ux)
+    - [User Stories](#user-stories)
+- [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Wireframes](#wireframes)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Programmes Used](#programmes-used)
+- [Testing](#testing)
+    - [Lighthouse](#lighthouse)
+    - [Devices](#devices)
+    - [Testing User Stories](#testing-user-stories)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Functionality](#functionality)
+    - [Future features](#future-features)
+- [Deployment](#deployment)
+- [Credits](#credits)
+    - [Code](#code)
+    - [Acknowledgements](#acknowledgements)
 
+## User Experience (UX)
+
+- ### User Stories
+
+1. As a user I want to test my use of their, there, or they're in a number of contexts. 
+    
+2. As a user I want to have support with the spellings of the target words so that I can see the words to embed the spelling, whilst practising the use of the words in context. 
+     
+3. As a user I want to know how well I did on the game. 
+    
+4. As a user I want to know how I am doing without looking at the score counter after each question. 
+    
+
+### Design 
+ - #### Colour Scheme
+
+ - The colour pallette was found on the [coolors](https://coolors.co/) site.
+ - As the target users will be children the colours selected were bright and eye catching. 
+
+ - #### Typography 
+ - The **Comic Neue** font was used as the main font for the site. This font was used for its casual appearance, which would aid in appeal to younger users. 
+
+ #### Wireframes 
+
+[Spelling Game Wireframe](assets/images/spelling-game-wireframe.jpg)
+
+## Features 
 
 ### Existing Features 
 
 **Landing Page Image**
 
-![rocks-off-landing](assets/images/spelling-game-landing.jpg)
+![Spelling Game Landing](assets/images/spelling-game-landing.jpg)
 
 - The landing page is bright and colourful, a theme continued throughout the site. This provides an eye-catching hook for the site's main intended users, children. 
 
@@ -124,10 +171,6 @@ The code was validated through the W3C HTML Validator, W3C CSS Validator, and JS
  - (https://jshint.com/)
 
 
-Include images of validator testing. 
-
-![rocks-off-about](https://github.com/A-Hebbes/Project-1-Rocks-Off/assets/148571629/b1f2c839-de1a-46d8-8c46-39a7e326ddff)
-
 HTML Validation
  - The HTML passed the validator with no issues. 
 
@@ -197,102 +240,30 @@ There was also an issue with the home button, which was a font-awesome home icon
 4. Select the source as main. 
 5. Now click save and refresh the page. 
 
-## Credits 
-
-### Code
-
-### Acknowledgements
-
-
-
-
-
-
-
-
-
-
-Prior to validator and lighthouse testing some bugs were evident in preview. I was having issues with the layout of boxes on the screen. The issue seemed to be related to the box borders. I found advice on (https://forum.freecodecamp.org/t/setting-a-right-border-breaks-my-html-and-css-layout/183473) from user **hadrienalllemon** which indicated that I could use border box to bring the child inside the parent. There was also advice to include different box-sizing for different browsers e.g. moz-box-sizing and webkit-box-sizing. Including this in the code solved the issue. 
-
-The background colour of the form did not fit with the site aesthetic so the colour was changed to be more in keeping. This led to readability issues, so I changed the colour of the background and text. 
-
-There were issues with the fieldset element not fitting into the flow of the page on smaller screens. I changed the width of the fieldset to 100% and then the text area I changed to 90%. Using the percentage values allowed for more flexibility on the smaller screen sizes.  
-
-
-
-### Validator Testing 
-
-Html and CSS were tested on W3C HTML code validator (https://validator.w3.org/) and W3C CSS code validator(https://jigsaw.w3.org/css-validator/). 
-
-**Html**
-
-An issue was flagged with aria labels in the code validator. The aria attributes were not correct. The issue was that I had just put 'aria' and not 'aria-label'. This was an easy enough fix. Re-running the code through the validator found no issues. 
-
-
-**CSS**
-
-The validator found no issues with the CSS. 
-
-### Lighthouse
-
-Lighthouse in dev tools was used to check for accesibility. An issue with text contrast with background was flagged in certain sections of the site. To rectify this I changed the background colour of the site to a darker shade of green. This fixed the issue. There was also an issue with the aria labels for the navigation a elements. The aria label didn't match exactly with the text displayed on the screen e.g. Aria label read: **Return to the top of the page** but the text displayed on screen read: **Back to top** Lighthouse said that this can lead to confusion for users who use screen readers. I made the change so that aria labels matched the text displayed and the issue was resolved.  After changes the accesibility was improved from 80% to 94%
-
-
-![rocks-off-lighthouse](https://github.com/A-Hebbes/Project-1-Rocks-Off/assets/148571629/6ed5e5bf-7227-437a-abb6-961978b2d34e)
-
-
-### Unfixed Bugs
-
-Lighthouse still brings up issues with performance. It asks me to 'avoid chaining critical requests' at present this is beyond my knowledge set and I will need to research to rectify this issue. Lighthouse also states that I should avoid large layout shifts. I think this is in reference to the changes I made to ensure that content remains readable on smaller screens. With more time I would look more into the responsive features and make site use more easy across different screen sizes. At present I have one media query for smaller screens which changes the site layout at max width 1090 px . I think there should probably be more flexibility to this. There is also an aesthetic issue in the deployed site which I am unable to fix. The tables move to the left of the page on the deployed site when I look at it on my iphone SE phone. The issue is not present in dev tools preview and I have made a number of attempts to fix it to no avail. 
-
-
-
-## Deployment 
-
- The site was deployed through GitHub pages. Once code was written it was commited and pushed to GitHub. The following steps outline how to deploy using GitHub Pages. 
-
- 1. Go to the repository A-Hebbes/Project-1-Rocks-Off
- 2. In side navigation select 'Pages'
- 3. In the dropdown select 'None'
- 4. Click on 'Master' 
- 5. Click 'Save'
- 6. Site is now live at: (https://a-hebbes.github.io/Project-1-Rocks-Off/) 
-
-
 
 ## Credits 
 
 Code help and advice came from many sources. 
 
-###
-
-**Code Institue**
-
-As this is my first introduction to coding, I used the 'Coder's Coffeehouse' project as a key source of inspiration and direction for my own site. Coder's Coffeehouse provided a good basis from which to apply my learning. I believe this especially for the HTML, however initial overrelaince on the CSS code led to issues further down the process. In hindsight, I should have used the guidance on CSS from Coders Coffeehouse more judiciously. My inital plan was to copy CSS from Coffee House into my style sheet so that I could see the structure and layout. This proved at times to be somewhat of a hindrance as I was finding bugs and issues that I hadn't actually coded in myself so finding them was difficult at times. 
-
-**Simen Daehlin**
-
-Simen helped outline the approach to the process and this was useful. He gave good information on the use of (https://coolors.co/) as a place to help with design choices. He gave me solid advice on how to approach the project and timeframes. Various factors limited my use of this advice which is a shame, but factors outside of my control led me to take a more rushed approach to the project. On reflection, I would use his advice more. For example, I am writing the readme after the project completion, but his advice was to do it prior to coding. This will be especially useful in completion of my next project as it will allow for a smoother design and development process. 
-
 **Ollie Grubb**
 
-At the outset of my project I was struggling with the IDE and GitHub. I was unable to effectively save work and was losing hope in ever getting the project together at all. Ollie took the time to talk me through the process and was able to help me solve the issues I was having. I also had an issue with deployment and Ollie helped me to sort this out as well. 
+Ollie has helped build my understanding of a variety of areas in relation to this project. He has helped in particular with the bug-fixing process. His guidance helped me to use the Dev Tools more effectively. His assistance has also been credited in the code. 
+ 
 
-**Chat GPT**
+**Video Guides**
 
-When I was having issues with the code I would seek advice from Chat Gpt as if it were a mentor. The advice was not always directly useful but more than once helped point me in the right direction. 
+- Modals 
+The use of modals was totally new to me and so the following video proved a useful introduction to their use(https://www.youtube.com/watch?v=KjQ8uvAt9kQ)
 
-**Border Code To Improve Layout**
+- General structure and approach 
+The following video was a useful scaffold in the early stages of the project. It helped outline some key principles and gave inspiration for structure (https://www.youtube.com/watch?v=f4fB9Xg2JEY)
 
-Code found at (https://forum.freecodecamp.org/t/setting-a-right-border-breaks-my-html-and-css-layout/183473) given by **hadrienallemon** was used to help sort layout in relation to borders. 
-
-**Box Shading Guide**
-
-I looked at the article at (https://css-tricks.com/snippets/css/css-box-shadow/) to see how to add shade to my boxes.  I changed the pixels in the code to REM equivalent for responsivity and used a color shade that is more in keeping with my site aesthetic.
 
 **Educational Sites and Fora**
 
 Listed below are more sites that I used to gain understanding of issues I was having or insights into best practice. 
+
+(https://coolors.co/)
 
 (https://www.thoughtco.com/)
 
@@ -300,13 +271,9 @@ Listed below are more sites that I used to gain understanding of issues I was ha
 
 (https://www.w3schools.com/)
 
-(https://developer.mozilla.org/en-US/)
-
 (https://forum.freecodecamp.org/)
 
 (https://nekocalc.com/px-to-rem-converter)
-
-(https://alistapart.com/)
 
 (https://webflow.com/blog/fonts-for-web-design)
 
@@ -315,10 +282,5 @@ Listed below are more sites that I used to gain understanding of issues I was ha
 ### Content
 
   
-- The coders coffee house project served as inspiration for layout and approach to coding the site.   
-
-
-### Media 
-
-
-- Images came from (https://unsplash.com/)
+- Font Awesome (https://fontawesome.com/)
+- Google Fonts (https://fonts.google.com/)

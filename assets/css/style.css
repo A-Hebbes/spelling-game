@@ -1,16 +1,6 @@
 /* color palette included from coolors.co guidance on making the website taken from youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY
 video guidance was adapted to suit my needs for the site. Also trying using variables and got guidance from https://www.w3schools.com/css/css3_variables.asp*/
 
-/* Var color uses 
-
- Color 1 - Background 
- Color 2 - Text 
- Color 3 - Question box  
- Color 4 - Boxes/heading text 
- Color 5 - Answer box shadow
-
-*/
-
 :root {
     font-family: 'Comic Neue', sans-serif;
     box-sizing: border-box;
@@ -206,6 +196,7 @@ button:hover {
         text-align: center;
         border: 0.125em solid;
         border-color: var(--color4);
+        border-radius: 0%;
     }
 
     .fa-message {
