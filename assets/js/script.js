@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
-// Variables//
+// Variables-Constants//
 
     const contactBtn = document.getElementById('contact-btn');
     const modalCon = document.getElementById('modal-contact');
